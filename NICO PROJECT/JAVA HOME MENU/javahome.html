@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/53cbf3eb97.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       
+        .nav{
+           position: fixed;
+           top: 0px;
+           height: 60px;
+           display: flex;
+           width: 100%;
+        }
+        .nav img{
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            margin-left: 5px;
+            
+        }
+        .nav .bar{
+           display: inline-block;
+           margin-left: 30px;
+           padding-top: 19px;
+        }
+        .nav .bar a{
+            padding: 21px 20px;
+            color: black;
+            text-decoration: none;
+            margin-bottom: 40px;
+        }
+        .nav .bar a:hover{
+            color: white;
+            background-color: rgb(41, 168, 98);
+        }
+        .nav .search{
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+        .nav .search input{ 
+            border-radius: 30px;
+            height: 40px;
+        }
+        .nav .search input:focus{
+            border: 0,5px solid rgb(68, 155, 68);
+            outline: 5px solid rgb(68, 155, 68);
+        }
+        .nav .bar2{
+           display: inline-block;
+           margin-left: 30px;
+           padding-top: 20px;
+        }
+        .nav .bar2 a{
+            padding: 10px 30px;
+            color: black;
+            text-decoration: none;
+            margin-bottom: 40px;
+        }
+        .nav .bar2 a:hover{
+            background-color: #f2f2f2;
+            border-radius: 30px;
+        }
+        .nav .login1{
+           display: inline-block;
+           margin-left: 10px;
+           padding-top: 21px;
+        }
+        .nav .login1 a{
+            background-color: rgb(41, 168, 98);
+            padding: 10px 10px;
+            border-radius: 30px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            margin-bottom: 40px;
+        }
+        .nav .login2{
+           display: inline-block;
+           padding-top: 21px;
+        }
+        .nav .login2 a{
+            background-color: rgb(131, 197, 131);
+            padding: 10px 10px;
+            border-radius: 30px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin-bottom: 40px;
+        }
+        .nav .login2 a:hover{
+            color: white;
+            background-color: rgb(41, 168, 98);
+        }
+        .nav2{
+            position: sticky;
+            top: 60px;
+            background-color: #282A35;
+            width: 100%;
+            height: 30px;
+            white-space: nowrap;
+            overflow-x: auto;
+            margin-top: 10px;
+        }
+        .nav2::-webkit-scrollbar{
+            width: 0;
+            height: 0;
+        }
+        .nav2 .bar{
+            display: inline-block;
+            padding-top: 3px;
+        }
+        .nav2 .bar a{
+            text-decoration: none;
+            color: white;
+            padding: 5px 15px;
+        }
+        .nav2 .bar a:hover{
+            background-color: black;
+        }
+        .sidebar{
+            position: fixed;
+            top: 90px;
+            overflow-y: auto;
+            background-color: #E7E9EB;
+            height: 545px;
+            width: 250px;
+        }
+        .sidebar h5{
+            margin-top: 25px;
+        }
+        .sidebar .box{
+            padding: 5px 0px;
+        }
+        .sidebar .box .in{
+            margin-left: 30px
+        }
+        .sidebar .box:hover{
+            background-color: #cccccc;
+        }
+        .main{
+            margin-left: 250px;
+            margin-top: 50px;
+            background-color: qua;
+            width: 910px;
+            height: 1000px;
+        }
+        .main a p{
+            background-color: rgb(41, 168, 98);
+            padding: 15px;
+            width: 130px;
+            border-radius: 5px;
+        }
+        .sidebar-right{
+            background-color: rgb(221, 220, 220);
+            margin-top: 50px;
+            float: right;
+            width: 190px;
+            height: 500px;
+            border-left: black;
+        }
+        .learn-java{
+            margin-left: 20px;
+            background-color: #D9EEE1;
+            border-radius: 10px;
+            height: 250px;
+            width: 870px;
+        }
+        .learn-java .p{
+            background-color: rgb(41, 168, 98);
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav fixed-top bg-light">
+        <a href=""><img src="W3Schools_logo.svg.png" alt=""></a>
+        <div class="bar">
+            <a href="#">Tutorial</a>
+            <a href="#">Excercise</a>
+            <a href="#">Certificates</a>
+            <a href="#">Service</a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="bar2">
+            <a href="">Spaces</a>
+            <a href="">For Teacher</a>
+            <a href="">Get Certified</a>
+        </div>
+        <div class="login1">
+            <a href="" class="text-decoration-none">Sing Up</a>
+        </div>
+        <div class="login2">
+            <a href="" class="text-decoration-none">Log In</a>
+        </div>
+    </div>
+    <div class="nav2">
+        <div class="bar">
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">JAVASCRIPT</a>
+            <a href="#">SQL</a>
+            <a href="#">PHYTON</a>
+            <a href="#" style="background-color: rgb(41, 168, 98);">JAVA</a>
+            <a href="#">PHP</a>
+            <a href="#">HOW TO</a>
+            <a href="#">W3.CSS</a>
+            <a href="#">C</a>
+            <a href="#">C++</a>
+            <a href="#">C#</a>
+            <a href="#">BOOTSTRAP</a>
+            <a href="#">REACT</a>
+            <a href="#">MYSQL</a>
+            <a href="#">JQUERY</a>
+            <a href="#">EXCEL</a>
+            <a href="#">DJANGO</a>
+            <a href="#">NUMPY</a>
+            <a href="#">PANDAS</a>
+            <a href="#">NODEJS</a>
+            <a href="#">DSA</a>
+            <a href="#">TYPESCRIPT</a>
+            <a href="#">ANGULAR</a>
+            <a href="#">GIT</a>
+            <a href="#">POSTGRESQL</a>
+            <a href="#">MONGODB</a>
+            <a href="#">ASP</a>
+            <a href="#">AI</a>
+            <a href="#">R</a>
+            <a href="#">GO</a>
+            <a href="#">KOTLIN</a>
+            <a href="#">SASS</a>
+            <a href="#">VUE</a>
+            <a href="#">GEN AI</a>
+            <a href="#">SCIPY</a>
+            <a href="#">CYBERSECURITY</a>
+        </div>
+    </div>
+    <div class="sidebar">
+        <h5 class="ms-3">Java Tutorial</h5>
+         <div class="box" style="background-color: rgb(41, 168, 98); ">
+            <a href="" class="text-decoration-none">
+                <div class="in text-light">Java Home</div>
+            </a>
+         </div>
+         <div class="box">
+            <a href="" class="text-decoration-none">
+                <div class="in text-dark">Java Intro</div>
+            </a>
+         </div>
+         <div class="box">
+            <a href="" class="text-decoration-none">
+                <div class="in text-dark">Java Get Started</div>
+            </a>
+         </div>
+         <div class="box">
+            <a href="" class="text-decoration-none">
+                <div class="in text-dark">Java Syntax</div>
+            </a>
+         </div>
+         <div class="box">
+            <a href="" class="text-decoration-none">
+                <div class="in text-dark">Java Output</div>
+            </a>
+         </div>
+         <div class="box">
+            <a href="" class="text-decoration-none">
+                <div class="in text-dark">Java Comments</div>
+            </a>
+         </div>
+         <div class="box">
+            <a href="" class="text-decoration-none">
+                <div class="in text-dark">Java Variables</div>
+            </a>
+         </div>
+         <div class="box">
+            <a href="" class="text-decoration-none">
+                <div class="in text-dark">Java Data Types</div>
+            </a>
+         </div>
+         <div class="box">
+            <a href="" class="text-decoration-none">
+                <div class="in text-dark">Java Type Casting</div>
+            </a>
+         </div>
+         <div class="box">
+            <a href="" class="text-decoration-none">
+                <div class="in text-dark">Java Operators</div>
+            </a>
+         </div>
+         <div class="box">
+            <a href="" class="text-decoration-none">
+                <div class="in text-dark">Java Strings</div>
+            </a>
+         </div>
+         <div class="box">
+            <a href="" class="text-decoration-none">
+                <div class="in text-dark">Java Math</div>
+            </a>
+         </div>
+         <div class="box">
+            <a href="" class="text-decoration-none">
+                <div class="in text-dark">Java Booleans</div>
+            </a>
+         </div>
+         <div class="box">
+            <a href="" class="text-decoration-none">
+                <div class="in text-dark">Java If...Else</div>
+            </a>
+         </div>
+         <div class="box">
+            <a href="" class="text-decoration-none">
+                <div class="in text-dark">Java Switch</div>
+            </a>
+         </div>
+         <div class="box">
+            <a href="" class="text-decoration-none">
+                <div class="in text-dark">Java While Loop</div>
+            </a>
+         </div>
+         <div class="box">
+            <a href="" class="text-decoration-none">
+                <div class="in text-dark">Java For Loop</div>
+            </a>
+         </div>
+         <div class="box">
+            <a href="" class="text-decoration-none">
+                <div class="in text-dark">Java Break/Continue</div>
+            </a>
+         </div>
+         <div class="box">
+            <a href="" class="text-decoration-none">
+                <div class="in text-dark">Java Arrays</div>
+            </a>
+         </div>
+        <h5 class="ms-3">Java Method</h5>
+    </div>
+    <div class="sidebar-right">
+        
+    </div>
+    <div class="main">
+      <div class="fw-bold text-dark">
+        <h1 class="ms-4" style="padding-top: 100px;">Java Tutorial</h1>
+        <a href="#" class="text-decoration-none">
+            <p class="text-white text-center ms-4 d-inline-block"><i class="fa-solid fa-chevron-left"></i> Back</p>
+        </a>
+        <a href="#" class="text-decoration-none">
+            <p class="text-white text-center d-inline-block me-4" style="float: right;">Next <i class="fa-solid fa-chevron-right"></i></p>
+        </a>
+       </div>
+       <div class="learn-java mt-3">
+        <h3 class="pt-4 ms-4">Learn Java</h3>
+        <p class="ms-4" style="font-size: 20px;">Java is a popular programming language.</p>
+        <p class="ms-4" style="font-size: 20px;">Java is used to develop mobile apps, web apps, desktop apps, games and much more.</p>
+        <a href="#" class="text-decoration-none">
+            <div class="p text-white text-center d-inline-block ms-4 fw-bold">Starting Learning Java Now <i class="fa-solid fa-angles-right"></i></div>
+        </a>
+       </div>
+    </div>
+</body>
+</html>
